@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician Login form</title>
+    <style>
+        div{
+            background-color: aqua;
+            width: 400px;
+            height: 700px;
+            margin-left: 30%;
+            padding-left: 30px;
+            padding-top: 20px;
+            box-shadow: 1px 1px 5px 5px yellow;
+            border-radius: 45px;
+            
+
+        }
+        label{
+            font-size: 25px;
+        }
+        input{
+            font-size: 20px;
+            border: 0;
+            border-radius: 15px;
+        }
+        span{
+            font-size: 20px;
+            color: red;
+        }
+        button{ 
+            font-size: 20px; 
+            width: 150px;
+            background: linear-gradient(to bottom,rgb(169, 228, 6),rgb(8, 170, 43)); 
+            border-radius: 10px;
+        }
+        button:hover{
+            background: linear-gradient(to top ,rgb(169, 228, 6),rgb(8, 170, 43));
+        }
+        .option{
+            font-size: 25px;
+            color: black;
+        }
+        select{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style=" background-color: rgb(207, 105, 37);">
+    <div  >
+        <form  action="a.jsp" id="form">
+            <h2 align="center" >REGISTRATION FORM</h2>
+            <label for="fna">Name</label><span>*</span><br>
+            <input type="text" id="fna" name="fna" required  autofocus><br><br>
+            <label for="mno">Mobil number</label><span>*</span><br>
+            <input type="text"  value="+91" readonly size="3">
+            <input type="tel" id="mno" name="mno" pattern="[0-9]{10}" maxlength="10" required ><br><br>
+            <label for="address">Address</label><span>*</span><br>
+            <input type="text" id="address" name="address" size="30" required><br><br>
+            <label for="location">Location</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="location" id="location">
+                <option value="">select</option>
+                <option value="Ashoka Garden">Ashoka Garden</option>
+                <option value="Apsara Talkies">Apsara Talkies</option>
+                <option value="JK Road">JK Road</option>
+                <option value="Piplani">Piplani</option>
+                <option value="Anand Nager">Anand Nager</option>
+                <option value="Kokta">Kokta</option>
+            </select>
+            <br><br><br>
+            <input type="radio"><span class="option"> Male</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio"><span class="option"> Female</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio"><span class="option"> Other</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br>
+            <label for="date">DOB</label><span>*</span><br>
+            <input type="date" name="date" required><br><br>
+            <label>image</label><br>
+            <input type="file"><br><br>
+            <label>Creat Password</label><span>*</span><br>
+            <input type="password" id="password" name="password" placeholder="enter password" required><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="clear all" style="background-color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="submit" >submit</button>
+        </form>
+    </div>   
+    <script>
+        document.getElementById("form").addEventListener("submit",function(event){
+            event.preventDefault();
+            window.location.href="id.html";
+        })
+    </script>
+</body>
+</html>

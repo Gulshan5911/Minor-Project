@@ -1,0 +1,63 @@
+#res{
+    padding-left: 40px;
+    display: inline;
+}
+#ask{
+    margin-top: 50px;
+}
+#login{
+    float: right;
+    width: 150px;
+    margin-right: 40px;
+    display: inline;
+    background: linear-gradient(to top,rgb(241, 112, 6),rgb(230, 190, 15));
+}
+#login:hover{
+    background: linear-gradient(to bottom,rgb(241, 112, 6),rgb(230, 190, 15));
+}
+#three{
+
+    transform-style: preserve-3d;
+}
+#three:hover{
+    transform: rotateY(180deg);
+}
+#partnert{
+    background-color: #0a5d7e;
+    border: 3px solid rgb(50, 5, 61);
+    color: white;
+    border-radius: 15px;  
+    width: 500px;  
+}
+#customert{
+    background-color: #0a5d7e;
+    border: 3px solid rgb(50, 5, 61);
+    color: white;
+    border-radius: 15px;
+    text-align: center;  
+    width: 500px; 
+    height: 200px;
+    margin-top: 40px; 
+}
+span{
+    padding-left:90px;
+}
+th{
+    font-size: 20px;
+    border-bottom: 1px solid #0a0a0a;
+    background-color: rgb(9, 102, 102);
+    color: black;
+}
+td{
+    border-right: 1px solid #0a0a0a;
+    border-bottom: 1px solid #0a0a0a;
+}
+.ho:hover{
+    background-color: #91420d;
+}
+.no-underline{
+    text-decoration: none;
+}
+.rowred:hover{
+    background-color: red;
+}
